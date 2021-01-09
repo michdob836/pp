@@ -8,7 +8,8 @@ varn = Y.Properties.VariableNames;
 
 np = length(varn) - 2;
 
-figure(1)
+fig = figure(1);
+fig.Name = Y.Properties.Description;
 tl = tiledlayout(np, 1);
 tl.TileSpacing = 'compact';
 tl.Padding = 'compact';
